@@ -1,0 +1,10 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.logo {
+    column-span: 2;
+    background-color: brown;
+}
