@@ -3,22 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Farid Lotfi Resume</title>
   </head>
   <body>
     <!-- Header Section -->
     <header class="header">
-        <span class="logo">Farid</span>
+      <section class="header__data">
+        <span class="header__logo">Farid</span>
 
-        <ul class="header__links">
-            <li><a href="/">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <nav class="header__nav">
+          <ul class="header__links">
+            <li class="header__item">
+              <a class="header__link" href="/">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Skills</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
 
-        <button class="header__call-button">Call Me</button>
+      <button class="header__call-button">Call Me</button>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <section class="hero__texts">
+        <span>Hello, I'm</span>
+        <h2>Farid Lotfi</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt,
+          veniam.
+        </p>
+      </section>
+
+      <section class="hero__image-section">
+        <img src="/assets/person1.png" class="hero__image" />
+      </section>
+    </section>
   </body>
 </html>
-
