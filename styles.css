@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+:root{
+  --primary: #6d33ff;
+  --primary-hover: #5e2ddd;
+  --secondary: #ffd438;
+  --body-background: #231f2e;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #231f2e;
+  background-color: var(--body-background);
 }
 
 h2 {
@@ -14,7 +21,6 @@ h2 {
 h3 {
   font-size: 2rem;
   color: white;
-  line-height: 0;
 }
 
 p {
@@ -23,8 +29,34 @@ p {
   color: whitesmoke;
 }
 
+.primary-button{
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 30px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.primary-button:hover{
+  background: var(--primary-hover);
+}
+
+.secondary-button{
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 30px;
+  transition: all 300ms ease;
+  cursor: pointer;
+  border-bottom: 2px solid var(--secondary);
+}
+
 .subtitle {
-  color: #6d33ff;
+  color: var(--primary);
   position: relative;
   padding-left: 10px;
 }
@@ -35,7 +67,7 @@ p {
   inset: 0;
   width: 5px;
   height: 20px;
-  background: blue;
+  background: var(--secondary);
 }
 
 .header {
@@ -76,12 +108,12 @@ p {
 }
 
 .header__link:hover {
-  background-color: #6c33ff;
+  background-color: var(--primary);
   color: white;
 }
 
 .header__call-button {
-  background-color: #6c33ff;
+  background-color: var(--primary);
   border: none;
   outline: none;
   border-radius: 8px;
@@ -116,7 +148,7 @@ p {
   width: 100%;
   height: 600px;
   object-fit: contain;
-  background: #6d33ff;
+  background: var(--primary);
   border-radius: 0 100px 0 100px;
 }
 
@@ -138,7 +170,7 @@ p {
 }
 
 .hero__social-contact {
-  background-color: #6c33ff;
+  background-color: var(--primary);
   border: none;
   outline: none;
   border-radius: 8px;
@@ -224,4 +256,10 @@ p {
 }
 .about__grid-item:nth-child(4) {
   border-radius: 0 30px 30px  30px;
+}
+
+.about__buttons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
